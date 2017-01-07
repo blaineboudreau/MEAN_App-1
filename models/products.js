@@ -3,8 +3,8 @@ var mongoose = require('mongoose');
 
 //2
 var productSchema = mongoose.Schema({
-    img: String,
     name: String,
+    image: String,
     price: Number,
     description: String
 });

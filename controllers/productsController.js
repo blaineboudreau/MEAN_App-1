@@ -7,10 +7,10 @@ var Product = require('../models/products.js');
 
 //2. INDEX
 router.get('/', function(req, res) {
-    // Foods.find({}, function(err, allFoods){
-    //     res.json(allFoods);
-    // });
-    res.send('foods index');
+    Product.find(function(err, data) {
+		res.send(data);
+	});
+    // res.send('foods index'); //--> working
 })
 
 

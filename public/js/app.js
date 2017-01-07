@@ -9,7 +9,7 @@ app.controller('mainController', ['$http', function($http){
 
     $http({
         method: 'GET',
-        url: 'http://localhost:3000/products'
+        url: 'http://localhost:3000/'
     }).then(
         function(response){
             console.log(response);
