@@ -23,6 +23,18 @@ var productInfo = [
     }
 ];
 
+router.get('/', function(req, res) {
+	Product.create(productInfo, function(err) {
+		if (err) {
+			console.log(err);
+			res.send('Error seeding database');
+		} else {
+			console.log('SEED EXECUTED');
+			res.redirect('/products')
+		}
+	});
+});
+
 
 
 module.exports = router;
