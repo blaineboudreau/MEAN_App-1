@@ -11,8 +11,16 @@ router.get('/', function(req, res) {
 		res.send(data);
 	});
     // res.send('foods index'); //--> working
-})
+});
 
+
+//get all product images
+router.get('/uniqueProducts', function(req, res) {
+    Product.find(function(err, uniqueProducts) {
+		res.send(uniqueProducts);
+	});
+    // res.send('unique products'); //-->working
+});
 
 
 
