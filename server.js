@@ -7,20 +7,26 @@ var bodyParser = require('body-parser');
 
 // 2. CONFIGURATION
 var app = express();
-//to check if the connection on localhost:3000 is working
+// to check if the connection on localhost:3000 is working
 // app.get('/', function(req, res){
 //     res.send('working')
 // }); //--> yes, it is working
 
 
 // 5. DATABASE
-mongoose.connect('mongodb://localhost/27017/mean');
+mongoose.connect('mongodb://localhost/mean_app');
+
+mongoose.connection.once('open', function(){
+    console.log('connected to mongod');
+})
 
 
 // 6. CONTROLLERS
+var productsController = require('./controllers/productsController.js');
+app.use('/products', productsController);
 
-
-
+var seedController = require('./controllers/seedController.js');
+app.use('/seed', seedController);
 
 
 // 4. MIDDLEWARE
