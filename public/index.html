@@ -38,19 +38,19 @@
                 <h1>Products</h1>
 
                 <ul>
-                    <li
-                        ng-repeat="product in ctrl.images"
+                    <li ng-repeat="product in ctrl.images"
                         ng-click="ctrl.find(product, $index)">
                             {{product.image}}
-
-                        <ul>
-                            <li ng-repeat="product in ctrl.product">
-                                {{product.name}}<br>
-                                {{product.price}}<br>
-                                {{product.description}}
-                            </li>
-                        </ul>
                     </li>
+
+                    <ul>
+                        <li ng-repeat="product in ctrl.product">
+                            {{product.name}}<br>
+                            {{product.price}}<br>
+                            {{product.description}}
+                        </li>
+                    </ul>
+
                 </ul>
             </section>
 
