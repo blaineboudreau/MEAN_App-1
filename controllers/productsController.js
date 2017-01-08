@@ -14,6 +14,7 @@ router.get('/', function(req, res) {
     // res.send('foods index'); //--> working
 }); //--> ok
 
+
 //3. GET ROUTE
 //to get all the products
 router.get('/products', function(req, res) {
@@ -23,6 +24,13 @@ router.get('/products', function(req, res) {
 });
 
 
+//4. GET ROUTE
+//gets all images links that match the product name sent through the URI
+router.get('/byImage/:name', function(req, res) {
+	Product.find({ product: req.params.name }, function(err, info) {
+		res.send(info);
+	});
+});
 
 
 
