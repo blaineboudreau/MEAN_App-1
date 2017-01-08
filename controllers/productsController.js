@@ -23,6 +23,15 @@ router.get('/uniqueProducts', function(req, res) {
 });
 
 
+//get the info of that specific product
+router.get('/byName/:name', function(req, res) {
+	Product.find({ product: req.params.data }, function(err, productInfo) {
+		res.send(productInfo);
+        console.log(req.params.data);
+	});
+});
+
+
 
 //1.
 module.exports = router;
