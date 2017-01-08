@@ -15,21 +15,21 @@ router.get('/', function(req, res) {
 
 
 //get all product images
-router.get('/uniqueProducts', function(req, res) {
-    Product.find(function(err, uniqueProducts) {
-		res.send(uniqueProducts);
-	});
-    // res.send('unique products'); //-->working
-});
+// router.get('/uniqueProducts', function(req, res) {
+//     Product.find(function(err, uniqueProducts) {
+// 		res.send(uniqueProducts);
+// 	});
+//     // res.send('unique products'); //-->working
+// });
 
 
 //get the info of that specific product
-router.get('/byName/:name', function(req, res) {
-	Product.find({ product: req.params.data }, function(err, productInfo) {
-		res.send(productInfo);
-        console.log(req.params.data);
-	});
-});
+// router.get('/byName/:name', function(req, res) {
+// 	Product.find({ product: req.params.data }, function(err, productInfo) {
+// 		res.send(productInfo);
+//         console.log(req.params.data);
+// 	});
+// });
 
 
 
