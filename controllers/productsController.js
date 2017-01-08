@@ -6,30 +6,23 @@ var Product = require('../models/products.js');
 
 
 //2. INDEX
+// '/' is the same as '/products' and it gets me to the products in json
 router.get('/', function(req, res) {
     Product.find(function(err, data) {
 		res.send(data);
 	});
     // res.send('foods index'); //--> working
+}); //--> ok
+
+//3. GET ROUTE
+//to get all the products
+router.get('/products', function(req, res) {
+	Product.find('product', function(err, productImage) {
+		res.send(productImage);
+	});
 });
 
 
-//get all product images
-// router.get('/uniqueProducts', function(req, res) {
-//     Product.find(function(err, uniqueProducts) {
-// 		res.send(uniqueProducts);
-// 	});
-//     // res.send('unique products'); //-->working
-// });
-
-
-//get the info of that specific product
-// router.get('/byName/:name', function(req, res) {
-// 	Product.find({ product: req.params.data }, function(err, productInfo) {
-// 		res.send(productInfo);
-//         console.log(req.params.data);
-// 	});
-// });
 
 
 
