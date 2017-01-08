@@ -38,7 +38,20 @@
                 <h1>Products</h1>
 
                 <ul>
-                    <li ng-repeat="product in ctrl.products">{{product.names}}</li>
+                    <li ng-repeat="product in ctrl.allProducts">
+                        <span ng-click="ctrl.getProductImage(product); ctrl.getProductInfo(product);">
+                                {{product.image}}
+                        </span>
+                    </li>
+
+                    <ul>
+                        <li ng-repeat="info in ctrl.productInfo">
+                            {{info.name}}<br>
+                            {{info.price}}<br>
+                            {{info.description}}
+                        </li>
+                    </ul>
+
                 </ul>
             </section>
 
