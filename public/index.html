@@ -16,22 +16,49 @@
         <!-- Change name eventually -->
         <title>Clothing Store - MEAN App</title>
     </head>
-    <body ng-controller="mainController as ctrl">
-
+    <body ng-controller="mainController as ctrl" data-spy="scroll" data-target="mainNav">
         <div id="home">
             <div class="container">
-                <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+                <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
                     <div class="navbar-header">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <ul class="nav-justified">
-                                    <li class="active col-xs-3"><a href="#">Home</a></li>
-                                    <li class="active col-xs-3 dropdown-toggle"><a href="#">Products</a></li>
-                                    <li class="active col-xs-3"><a href="#">Location</a></li>
-                                    <li class="active col-xs-3"><a href="#">About</a></li>
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="glyphicon glyphicon-align-justify"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#home">Home</a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="">Products <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#tops">Tops</a></li>
+                                    <li><a href="#bottoms">Bottoms</a></li>
+                                    <li><a href="#active">Active</a></li>
+                                    <li><a href="#dresses">Dresses</a></li>
+                                    <li><a href="#shoes">Shoes</a></li>
+                                    <li><a href="#accessories">Accessories</a></li>
                                 </ul>
+                            </li>
+                            <li class=""><a href="#location">Location</a></li>
+                            <li class=""><a href="#about">About</a></li>
+                        </ul>
+                        <!-- Search Area -->
+                        <form class="navbar-form navbar-left" role="search" action="index.html" method="post">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                                <!-- <span class="glyphicon glyphicon-search"></span> -->
+                                <input type="submit" class="btn btn-default" name="" value="Submit">
+
                             </div>
-                        </div>
+                        </form>
+                        <!-- Login Area -->
+                        <form class="navbar-form" action="index.html" method="post">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Username">
+                                <input type="password" class="form-control" name="" value="Password">
+                                <input type="submit" class="btn btn-default" name="" value="Login">
+                            </div>
+                        </form>
                     </div>
                 </nav>
             </div>
@@ -41,9 +68,6 @@
                     <h1>Clothing Store Logo</h1>
 
                     <h3>clothing store tagline</h3>
-                    <ul>
-                        <li>Log In</li>
-                    </ul>
                 </section>
             </div>
         </div>
@@ -102,9 +126,11 @@
 
         <!-- This can become an include -->
         <footer>
-            <form class="" action="index.html" method="post">
-                <input type="text" name="" placeholder="Email"/><br>
-                <input type="submit" name="" value="Add to Newsletter">
+            <form class="active" action="index.html" method="post">
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Email"/><br>
+                    <input type="submit" name="" value="Subscribe">
+                </div>
             </form>
             <p>© 2016 Design and Development by Stephanie, Jessica and Blaine.</p>
         </footer>
