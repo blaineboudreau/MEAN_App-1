@@ -69,23 +69,23 @@
         </div>
 
         <main>
-            <div id="products">
+            <div id=""> <!-- need to add the id="products" when I finish working on this section -->
                 <div class="container">
                     <section>
                         <h1>Products</h1>
 
                         <ul>
                             <li ng-repeat="product in ctrl.allProducts">
-                                <span ng-click="ctrl.getProductImage(product); ctrl.getProductInfo(product);">
-                                        {{product.image}}
+                                <span ng-click="ctrl.getProductInfo(product);">
+                                    <img ng-src='{{product.image}}' width="100px" height="100px"/>
+                                    <p>{{product.name}}</p>
                                 </span>
                             </li>
 
                             <ul>
-                                <li ng-repeat="info in ctrl.productInfo">
-                                    {{info.name}}<br>
-                                    {{info.price}}<br>
-                                    {{info.description}}
+                                <li ng-repeat="product in ctrl.productInfo">
+                                    {{product.price}} <br> <!-- when the time comes, double check if the | currency filter is correct -->
+                                    {{product.description}}
                                 </li>
                             </ul>
 

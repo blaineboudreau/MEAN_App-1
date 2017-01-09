@@ -10,16 +10,17 @@ app.controller('mainController', ['$http', function($http){
     var controller = this;
     // this.product = [];
 
+
 //-------------------------------------------------
-    //function to retrieve the list of all products when the page loads (images links)
+    //retrieve the list of all products when the page loads (images links)
     $http({
         method: 'GET',
-        url: 'http://localhost:3000/products'
+        url: 'http://localhost:3000/products/allProducts'
     }).then(
         function(response) { //success
-            console.log(response.data); //not sure why this is returning undefined because I can see the image links displaying in the index.html?
+            console.log(response); //gets the array of objects
             controller.allProducts = response.data;
-            console.log(response.data.name); //undefined
+            console.log(response.data); //returns as object
         },
         function(response) { //failure
             console.log(response);
@@ -27,26 +28,20 @@ app.controller('mainController', ['$http', function($http){
     );
 
 //-------------------------------------------------
-    //set product image link
-    this.getProductImage = function(productImage) {
-        controller.product = productImage;
-        console.log(controller.product); //this returns the whole product as an object
-    };
-
-//-------------------------------------------------
-    //get product info
+    //get product info / click event
     this.getProductInfo = function(product) {
         $http({
             method: 'GET',
-            url: 'http://localhost:3000/products/byImage/' + controller.product
+            url: 'http://localhost:3000/products/byName/' + controller.product
         }).then(
             function(response) {
-                console.log(response.data);//response.data is returning as empty object
+                console.log(response);
                 controller.productInfo = response.data;
+                console.log(response.data);//response.data is returning as empty object
 
-                // console.log(info.name);
-                // console.log(info.price);
-                // console.log(info.description);
+                console.log(product.name);//returning the name of that specific product which is what I want
+                console.log(product.price);
+                console.log(product.description);
          },
          function(response) {
                 console.log(response);
