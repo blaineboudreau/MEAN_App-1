@@ -22,7 +22,25 @@ var productInfo = [
         image: "http://simpleicon.com/wp-content/uploads/bag-8.png",
         price: 10,
         description: "This is a bag... Lorem ipsum dolor sit amet, id sed sonet maluisset, ut sea viris accommodare, omnes laudem iriure sed eu. Recteque mediocrem vel et, an qui tempor electram, dicunt alterum quo ea. Melius oportere quo id, vel ei scripta utroque."
-    }
+    },
+    {
+        name: "Black Bag",
+        image: "http://simpleicon.com/wp-content/uploads/bag-8.png",
+        price: 10,
+        description: "This is a bag... Lorem ipsum dolor sit amet, id sed sonet maluisset, ut sea viris accommodare, omnes laudem iriure sed eu. Recteque mediocrem vel et, an qui tempor electram, dicunt alterum quo ea. Melius oportere quo id, vel ei scripta utroque."
+    },
+    {
+        name: "Black Bag",
+        image: "http://simpleicon.com/wp-content/uploads/bag-8.png",
+        price: 10,
+        description: "This is a bag... Lorem ipsum dolor sit amet, id sed sonet maluisset, ut sea viris accommodare, omnes laudem iriure sed eu. Recteque mediocrem vel et, an qui tempor electram, dicunt alterum quo ea. Melius oportere quo id, vel ei scripta utroque."
+    },
+    {
+        name: "Black Bag",
+        image: "http://simpleicon.com/wp-content/uploads/bag-8.png",
+        price: 10,
+        description: "This is a bag... Lorem ipsum dolor sit amet, id sed sonet maluisset, ut sea viris accommodare, omnes laudem iriure sed eu. Recteque mediocrem vel et, an qui tempor electram, dicunt alterum quo ea. Melius oportere quo id, vel ei scripta utroque."
+    },
 ];
 
 router.get('/', function(req, res) {

@@ -69,27 +69,32 @@
         </div>
 
         <main>
-            <div id=""> <!-- need to add the id="products" when I finish working on this section -->
+            <div id="products"> <!-- need to add the id="products" when I finish working on this section -->
                 <div class="container">
                     <section>
                         <h1>Products</h1>
 
-                        <ul>
-                            <li ng-repeat="product in ctrl.allProducts">
-                                <span ng-click="ctrl.getProductInfo(product);">
-                                    <img ng-src='{{product.image}}' width="100px" height="100px"/>
-                                    <p>{{product.name}}</p>
-                                </span>
-                            </li>
-
+                        <div class="container">
                             <ul>
-                                <li ng-repeat="product in ctrl.productInfo">
-                                    {{product.price}} <br> <!-- when the time comes, double check if the | currency filter is correct -->
-                                    {{product.description}}
+                                <li ng-repeat="product in ctrl.allProducts">
+                                    <div id="productItem">
+                                        <span ng-click="ctrl.getProductInfo(product);">
+                                            <img ng-src='{{product.image}}' />
+                                            <p>{{product.name}}</p>
+                                        </span>
+                                    </div>
                                 </li>
-                            </ul>
 
-                        </ul>
+                                <div id="productInfoShow" class="">
+                                    <ul>
+                                        <li ng-repeat="product in ctrl.productInfo">
+                                            {{product.price}} <br> <!-- when the time comes, double check if the | currency filter is correct -->
+                                            {{product.description}}
+                                        </li>
+                                    </ul>
+                                </div>
+                            </ul>
+                        </div>
                     </section>
                 </div>
             </div>
@@ -99,7 +104,7 @@
                     <section>
                         <h1>Location</h1>
                         <div id="apiWindow" class="">
-
+                            <!-- Blaine put your api location here -->
                         </div>
                     </section>
                 </div>

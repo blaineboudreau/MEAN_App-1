@@ -24,6 +24,26 @@ li {
 #products {
   height: 100vh;
   background-color: #004445; }
+  #products ul {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 5px; }
+  #products li {
+    max-width: 40%;
+    margin: 1%; }
+
+#productItem {
+  background-image: radial-gradient(#6FB98F, #2C7873);
+  border-radius: 10px; }
+  #productItem img {
+    padding: 5px;
+    width: 100px;
+    height: 100px; }
 
 #location {
   height: 100vh;
