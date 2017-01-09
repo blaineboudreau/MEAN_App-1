@@ -32,12 +32,12 @@ app.controller('mainController', ['$http', function($http){
     this.getProductInfo = function(product) {
         $http({
             method: 'GET',
-            url: 'http://localhost:3000/products/byName/' + controller.product
+            url: 'http://localhost:3000/products/byName/' + product
         }).then(
             function(response) {
                 console.log(response);
                 controller.productInfo = response.data;
-                console.log(response.data);//response.data is returning as empty object
+                console.log(response.data);//response.data is returning as an empty object
 
                 console.log(product.name);//returning the name of that specific product which is what I want
                 console.log(product.price);

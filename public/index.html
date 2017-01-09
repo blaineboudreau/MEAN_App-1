@@ -69,7 +69,7 @@
         </div>
 
         <main>
-            <div id="products"> <!-- need to add the id="products" when I finish working on this section -->
+            <div id="products">
                 <div class="container">
                     <section>
                         <h1>Products</h1>
@@ -86,12 +86,13 @@
 
                                     <div id="productInfoShow" class="">
                                         <ul>
-                                            <li ng-repeat="product in ctrl.productInfo">
-                                                {{product.price | currency}} <br> <!-- when the time comes, double check if the | currency filter is correct -->
+                                            <li >
+                                                {{product.price | currency}} <br>
                                                 {{product.description}}
                                             </li>
                                         </ul>
                                     </div>
+
                                 </li>
                             </ul>
                         </div>
