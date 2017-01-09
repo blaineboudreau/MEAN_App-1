@@ -45,6 +45,15 @@ li {
     width: 100px;
     height: 100px; }
 
+#productInfoShow{
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    display: inline-block;
+    float: right;
+    max-width: 50%;
+}
+
+
 #location {
   height: 100vh;
   background-color: #2C7873; }
