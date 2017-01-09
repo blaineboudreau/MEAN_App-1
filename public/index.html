@@ -83,16 +83,16 @@
                                             <p>{{product.name}}</p>
                                         </span>
                                     </div>
-                                </li>
 
-                                <div id="productInfoShow" class="">
-                                    <ul>
-                                        <li ng-repeat="product in ctrl.productInfo">
-                                            {{product.price}} <br> <!-- when the time comes, double check if the | currency filter is correct -->
-                                            {{product.description}}
-                                        </li>
-                                    </ul>
-                                </div>
+                                    <div id="productInfoShow" class="">
+                                        <ul>
+                                            <li ng-repeat="product in ctrl.productInfo">
+                                                {{product.price | currency}} <br> <!-- when the time comes, double check if the | currency filter is correct -->
+                                                {{product.description}}
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </section>
