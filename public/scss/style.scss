@@ -5,23 +5,61 @@ $cadetBlue: #004445;
 $rain: #2C7873;
 $greenery: #6FB98F;
 $peach: #FFE6E6;
+$black: #000000;
 
 
 body{
-    padding-top: 100px;
+    h1{
+        color: $greenery;
+    }
 }
 li{
     list-style: none;
 }
 #mainNav{
     background-color: $blueBlack;
-    padding: 10px;
     color: $rain;
+    padding: 5px;
     a{
         color: $rain;
     }
     .dropdown-menu{
         background-color: $peach;
-        margin: 8.5px;
+    }
+    #userName{
+        margin-top: 2px;
+    }
+}
+#home{
+    background-image: url("/css/images/home.jpg");
+    height: 100vh;
+    padding: 100px;
+    text-align: center;
+
+}
+#products{
+    height: 100vh;
+    background-color: $cadetBlue;
+}
+#location{
+    height:100vh;
+    background-color: $rain;
+}
+#about{
+    height: 100vh;
+    background-color: $greenery;
+    color: $black;
+    h1{
+        color: inherit;
+    }
+}
+footer{
+    background-color: $peach;
+    height: 200px;
+    text-align: center;
+    input{
+        text-align: center;
+        width: 50%;
+        margin-top: 5%;
     }
 }

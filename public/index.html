@@ -29,7 +29,7 @@
                         <ul class="nav navbar-nav">
                             <li><a href="#home">Home</a></li>
                             <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="">Products <span class="caret"></span></a>
+                                <a class="dropdown-toggle" data-toggle="dropdown">Products <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="#tops">Tops</a></li>
                                     <li><a href="#bottoms">Bottoms</a></li>
@@ -46,17 +46,13 @@
                         <form class="navbar-form navbar-left" role="search" action="index.html" method="post">
                             <div class="form-group">
                                 <input type="text" class="form-control" placeholder="Search">
-                                <!-- <span class="glyphicon glyphicon-search"></span> -->
-                                <input type="submit" class="btn btn-default" name="" value="Submit">
-
-                            </div>
-                        </form>
-                        <!-- Login Area -->
-                        <form class="navbar-form" action="index.html" method="post">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Username">
-                                <input type="password" class="form-control" name="" value="Password">
-                                <input type="submit" class="btn btn-default" name="" value="Login">
+                                <!-- Commenting out for styling options -->
+                                <!-- <input type="submit" class="btn btn-default" name="" value="Submit"> -->
+                                <!-- <label for="userName">Username</label> -->
+                                <input id="userName" type="text" class="form-control" placeholder="Username">
+                                <label for="userPassword">Password</label>
+                                <input id="userPassword" type="password" class="form-control" name="" value="Password">
+                                <!-- <input type="submit" class="btn btn-default" name="" value="Login"> -->
                             </div>
                         </form>
                     </div>
@@ -73,8 +69,8 @@
         </div>
 
         <main>
-            <div class="container">
-                <div id="products" class="">
+            <div id="products">
+                <div class="container">
                     <section>
                         <h1>Products</h1>
 
@@ -98,41 +94,53 @@
                 </div>
             </div>
 
-            <div id="location" class="container">
-                <section>
-                    <h1>Location</h1>
-                </section>
+            <div id="location">
+                <div class="container">
+                    <section>
+                        <h1>Location</h1>
+                        <div id="apiWindow" class="">
+
+                        </div>
+                    </section>
+                </div>
             </div>
 
-            <div id="about" class="container">
-                <section>
-                    <h1>About The Team</h1>
+            <div id="about">
+                <div class="container">
+                    <section>
+                        <h1>About The Team</h1>
 
-                    <h2>Stephanie</h2>
-                    <h3>AngularJS Guru</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                        <h2>Stephanie</h2>
+                        <h3>AngularJS Guru</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
 
-                    <h2>Jessica</h2>
-                    <h3>CSS Guru</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                        <h2>Jessica</h2>
+                        <h3>CSS Guru</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
 
-                    <h2>Blaine</h2>
-                    <h3>APIs Guru</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-                </section>
+                        <h2>Blaine</h2>
+                        <h3>APIs Guru</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                    </section>
+                </div>
             </div>
 
         </main>
 
         <!-- This can become an include -->
         <footer>
-            <form class="active" action="index.html" method="post">
-                <div class="form-group">
-                    <input type="text" name="" placeholder="Email"/><br>
-                    <input type="submit" name="" value="Subscribe">
-                </div>
-            </form>
-            <p>© 2016 Design and Development by Stephanie, Jessica and Blaine.</p>
+            <div class="container">
+                <br>
+                <form action="index.html" method="post">
+                    <div class="form-group ">
+                        <input id="subscribe" type="text" name="" placeholder="Subscribe"/><br>
+                    </div>
+                </form>
+                <br>
+            </div>
+            <p>
+                <cite>© 2016 Design and Development by Stephanie, Jessica and Blaine.</cite>
+            </p>
         </footer>
     <!-- CDN for JS plugins -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

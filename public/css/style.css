@@ -1,15 +1,46 @@
-body {
-  padding-top: 100px; }
+body h1 {
+  color: #6FB98F; }
 
 li {
   list-style: none; }
 
 #mainNav {
   background-color: #021C1E;
-  padding: 10px;
-  color: #2C7873; }
+  color: #2C7873;
+  padding: 5px; }
   #mainNav a {
     color: #2C7873; }
   #mainNav .dropdown-menu {
-    background-color: #FFE6E6;
-    margin: 8.5px; }
+    background-color: #FFE6E6; }
+  #mainNav #userName {
+    margin-top: 2px; }
+
+#home {
+  background-image: url("/css/images/home.jpg");
+  height: 100vh;
+  padding: 100px;
+  text-align: center; }
+
+#products {
+  height: 100vh;
+  background-color: #004445; }
+
+#location {
+  height: 100vh;
+  background-color: #2C7873; }
+
+#about {
+  height: 100vh;
+  background-color: #6FB98F;
+  color: #000000; }
+  #about h1 {
+    color: inherit; }
+
+footer {
+  background-color: #FFE6E6;
+  height: 200px;
+  text-align: center; }
+  footer input {
+    text-align: center;
+    width: 50%;
+    margin-top: 5%; }
