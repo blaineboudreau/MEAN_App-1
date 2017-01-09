@@ -45,7 +45,7 @@
                         <!-- Search Area -->
                         <form class="navbar-form navbar-left" role="search" action="index.html" method="post">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Search">
+                                <input type="text" class="form-control" placeholder="Search" ng-model="searchBox">
                                 <!-- Commenting out for styling options -->
                                 <!-- <input type="submit" class="btn btn-default" name="" value="Submit"> -->
                                 <!-- <label for="userName">Username</label> -->
@@ -76,21 +76,17 @@
 
                         <div class="container">
                             <ul>
-                                <li ng-repeat="product in ctrl.allProducts">
+                                <li ng-repeat="product in ctrl.allProducts | filter:searchBox"
+                                    ng-click="ctrl.getProductInfo(product)">
                                     <div id="productItem">
-                                        <span ng-click="ctrl.getProductInfo(product);">
-                                            <img ng-src='{{product.image}}' />
-                                            <p>{{product.name}}</p>
-                                        </span>
+                                        <img ng-src='{{product.image}}'/>
+                                        <p>{{product.name}}</p>
                                     </div>
 
                                     <div id="productInfoShow" class="">
-                                        <ul>
-                                            <li >
-                                                {{product.price | currency}} <br>
-                                                {{product.description}}
-                                            </li>
-                                        </ul>
+                                            <p>{{product.price | currency}}</p>
+                                            <p>{{product.description}}</p>
+                                        </div>
                                     </div>
 
                                 </li>
