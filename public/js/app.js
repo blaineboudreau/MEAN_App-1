@@ -47,7 +47,7 @@ app.controller('mainController', ['$http', function($http){
                 console.log(product.name);//returning the name of that specific product which is what I want
                 console.log(product.price);
                 console.log(product.description);
-
+                console.log(product.image);
          },
          function(response) {
                 console.log(response);
