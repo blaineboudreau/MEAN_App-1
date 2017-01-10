@@ -152,21 +152,9 @@
 
         </main>
 
-        <!-- This can become an include -->
-        <footer>
-            <div class="container">
-                <br>
-                <form action="index.html" method="post">
-                    <div class="form-group ">
-                        <input id="subscribe" type="text" name="" placeholder="Subscribe"/><br>
-                    </div>
-                </form>
-                <br>
-            </div>
-            <p>
-                <cite>© 2016 Design and Development by Stephanie, Jessica and Blaine.</cite>
-            </p>
-        </footer>
+        <!-- Footer section is under partials/footerTemplate.html. all changes to the footer should be made in that separate html file. -->
+        <div ng-include="'partials/footerTemplate.html'"></div>
+
     <!-- CDN for JS plugins -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     </body>
