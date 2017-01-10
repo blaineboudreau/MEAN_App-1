@@ -55,6 +55,17 @@ li{
         max-width: 40%;
         margin: 1%;
     }
+    #productModal{
+        img{
+            width: 30%;
+            height: auto;
+            display: -webkit-inline-box;
+        }
+        p{
+            width: 50%;
+            margin: 0 auto;
+        }
+    }
 }
 
 #productItem{

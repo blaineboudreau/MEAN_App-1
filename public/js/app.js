@@ -4,11 +4,16 @@ console.log('app.js connected'); //--> yes
 var app = angular.module('MeanApp', []);
 
 
+
+
 //2.
 app.controller('mainController', ['$http', function($http){
 
     var controller = this;
     // this.product = [];
+
+
+
 
 
 //-------------------------------------------------
@@ -27,9 +32,13 @@ app.controller('mainController', ['$http', function($http){
         }
     );
 
+
 //-------------------------------------------------
     //get product info / click event
+    this.activeProduct = {};
     this.getProductInfo = function(product) {
+        // console.log(this, " is this");
+
         $http({
             method: 'GET',
             url: 'http://localhost:3000/products/byName/' + product
@@ -42,11 +51,19 @@ app.controller('mainController', ['$http', function($http){
                 console.log(product.name);//returning the name of that specific product which is what I want
                 console.log(product.price);
                 console.log(product.description);
+                controller.changeActiveProduct = function(product){
+                    controller.activeProduct = product;
+                    console.log(activeProduct);
+                    console.log(controller);
+                };
          },
          function(response) {
                 console.log(response);
          }
-        )
+        );
+
+
+
     };
 
 //-------------------------------------------------
