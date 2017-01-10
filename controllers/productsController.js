@@ -32,6 +32,13 @@ router.get('/byName/:name', function(req, res) {
 	});
 });
 
+//5. SHOPPING CART ROUTE
+router.get('/cart', function(req, res) {
+	Product.find({ product: req.params.data }, function(err, buyProduct) {
+		res.send(buyProduct);
+	});
+});
+
 
 
 //1.
