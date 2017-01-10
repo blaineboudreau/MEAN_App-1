@@ -13,9 +13,6 @@ app.controller('mainController', ['$http', function($http){
     // this.product = [];
 
 
-
-
-
 //-------------------------------------------------
     //retrieve the list of all products when the page loads (images links)
     $http({
@@ -35,7 +32,6 @@ app.controller('mainController', ['$http', function($http){
 
 //-------------------------------------------------
     //get product info / click event
-    this.activeProduct = {};
     this.getProductInfo = function(product) {
         // console.log(this, " is this");
 
@@ -51,23 +47,33 @@ app.controller('mainController', ['$http', function($http){
                 console.log(product.name);//returning the name of that specific product which is what I want
                 console.log(product.price);
                 console.log(product.description);
-                controller.changeActiveProduct = function(product){
-                    controller.activeProduct = product;
-                    console.log(activeProduct);
-                    console.log(controller);
-                };
+
+         },
+         function(response) {
+                console.log(response);
+         }
+        );
+    };
+
+//-------------------------------------------------
+    //click event to add to cart
+    this.addToCart = function(){
+
+        $http({
+            method: 'GET',
+            url: 'http://localhost:3000/products/cart'
+        }).then(
+            function(response) {
+                console.log(response);
+                console.log('buy button was clicked');
+                controller.productInfo = response.data;
          },
          function(response) {
                 console.log(response);
          }
         );
 
-
-
     };
-
-//-------------------------------------------------
-
 
 
 }]); //--> end of function

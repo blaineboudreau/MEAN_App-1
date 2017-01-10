@@ -52,9 +52,16 @@
                                 <input id="userName" type="text" class="form-control" placeholder="Username">
                                 <label for="userPassword">Password</label>
                                 <input id="userPassword" type="password" class="form-control" name="" value="Password">
+
                                 <!-- <input type="submit" class="btn btn-default" name="" value="Login"> -->
                             </div>
                         </form>
+
+
+                        <div>
+                            <p ng-keyup="count = count + 1" ng-init="count=0">Cart: {{count}}</p>
+                        </div>
+
                     </div>
                 </nav>
             </div>
@@ -80,6 +87,7 @@
                                     <div id="productItem">
                                         <img ng-src='{{product.image}}'/>
                                         <p>{{product.name}}</p>
+                                        <p>{{product.price | currency}}</p>
                                         <button ng-click="ctrl.getProductInfo(product);"
                                                 class="btn btn-default"
                                                 data-target="#productModal"
@@ -98,11 +106,11 @@
                                                         <p><strong>{{product.price | currency}}</strong></p>
                                                     </div>
                                                     <div class="model-footer">
-                                                        <button class="btn btn-default" type="button" name="button">BUY</button><br><br>
-                                                        <button class="btn btn-default" data-dismiss="modal">Close</button><br><br>
+                                                        <button ng-click="ctrl.addToCart();" class="btn btn-default" type="button" name="button" data-dismiss="modal">BUY</button><br><br>
                                                     </div>
                                                 </div>
                                             </div>
+                                        </div>
                                     </div>
                                 </li>
                             </ul>
