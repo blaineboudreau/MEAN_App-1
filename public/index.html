@@ -76,19 +76,34 @@
 
                         <div class="container">
                             <ul>
-                                <li ng-repeat="product in ctrl.allProducts | filter:searchBox"
-                                    ng-click="ctrl.getProductInfo(product)">
+                                <li ng-repeat="product in ctrl.allProducts | filter:searchBox">
                                     <div id="productItem">
                                         <img ng-src='{{product.image}}'/>
                                         <p>{{product.name}}</p>
+                                        <button ng-click="ctrl.getProductInfo(product);"
+                                                class="btn btn-default"
+                                                data-target="#productModal"
+                                                data-toggle="modal">Preview</button>
+                                                <!-- product modal -->
+                                        <div id="productModal" class="modal fade" role="dialog" tabindex="-1" modal="showModal">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button class="close" data-dismiss="modal">&times;</button>
+                                                        <h4 class="modal-title">{{product.name}}</h4>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <img ng-src='{{product.image}}'class="img-rounded img-responsive"/>
+                                                        <p>{{product.description}}</p>
+                                                        <p><strong>{{product.price | currency}}</strong></p>
+                                                    </div>
+                                                    <div class="model-footer">
+                                                        <button class="btn btn-default" type="button" name="button">BUY</button><br><br>
+                                                        <button class="btn btn-default" data-dismiss="modal">Close</button><br><br>
+                                                    </div>
+                                                </div>
+                                            </div>
                                     </div>
-
-                                    <div id="productInfoShow" class="">
-                                            <p>{{product.price | currency}}</p>
-                                            <p>{{product.description}}</p>
-                                        </div>
-                                    </div>
-
                                 </li>
                             </ul>
                         </div>
