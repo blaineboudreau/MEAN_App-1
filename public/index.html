@@ -59,7 +59,7 @@
 
 
                         <div>
-                            <p ng-keyup="count = count + 1" ng-init="count=0">Cart: {{count}}</p>
+                            <p ng-init="count=0">Cart: {{count}}</p>
                         </div>
 
                     </div>
@@ -106,7 +106,7 @@
                                                         <p><strong>{{product.price | currency}}</strong></p>
                                                     </div>
                                                     <div class="model-footer">
-                                                        <button ng-click="ctrl.addToCart();" class="btn btn-default" type="button" name="button" data-dismiss="modal">BUY</button><br><br>
+                                                        <button ng-keyup="event=$event" class="btn btn-default" type="button" name="button" data-dismiss="modal">BUY {{ event.keyCode }}</button><br><br>
                                                     </div>
                                                 </div>
                                             </div>
