@@ -24,10 +24,6 @@ li {
 #carousel {
   margin: 0 auto;
   width: 100%; }
-  #carousel img {
-    height: 30%;
-    padding: 10px;
-    margin: 0 auto; }
 
 #products {
   padding-top: 100px;
@@ -47,13 +43,20 @@ li {
   #products li {
     margin: 1%;
     width: 30%; }
-  #products #productModal img {
-    width: 100px;
-    height: auto;
-    display: -webkit-inline-box; }
-  #products #productModal p {
-    width: 50%;
-    margin: 0 auto; }
+  #products img {
+    max-width: 80%;
+    height: 50%; }
+  #products .modal {
+    width: 60%;
+    margin: 0 auto;
+    padding: 5px; }
+    #products .modal img {
+      width: 100px;
+      height: auto;
+      display: -webkit-inline-box; }
+    #products .modal p {
+      width: 50%;
+      margin: 0 auto; }
 
 #productItem {
   background-image: radial-gradient(#6FB98F, #2C7873);

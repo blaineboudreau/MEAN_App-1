@@ -41,11 +41,12 @@ app.controller('mainController', ['$http', function($http){
             function(response) {
                 console.log(response);
                 controller.productInfo = response.data;
+                // product.nameId = response.data.name;
                 console.log(response.data);//response.data is returning as an empty object
-
                 console.log(product.name);//returning the name of that specific product which is what I want
                 console.log(product.price);
                 console.log(product.description);
+
          },
          function(response) {
                 console.log(response);
