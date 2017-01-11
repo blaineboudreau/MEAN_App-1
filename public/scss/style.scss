@@ -35,29 +35,41 @@ li{
 
 // Home block
 #home{
-    background-image: url("/css/images/home.jpg");
-    height: 100vh;
+    min-height: 100vh;
+    background-color: $rain;
     padding: 100px;
     text-align: center;
 }
+#carousel{
+    margin: 0 auto;
+    width: 100%;
+    img{
+        height: 30%;
+        // display: -webkit-inline-box;
+        padding: 10px;
+        margin: 0 auto;
+    }
 
+}
 // Products block
 #products{
-    height: 100vh;
+    padding-top: 100px;
     background-color: $cadetBlue;
     ul{
         display: flex;
         flex-wrap: wrap;
+        flex-grow: 4;
         text-align: center;
         padding: 5px;
     }
     li{
-        max-width: 40%;
         margin: 1%;
+        width: 30%;
     }
+
     #productModal{
         img{
-            width: 30%;
+            width: 100px;
             height: auto;
             display: -webkit-inline-box;
         }
@@ -74,32 +86,26 @@ li{
       $greenery,
       $rain
     );
+    padding: 10px;
     border-radius: 10px;
-    // text-align: center;
 
     img{
         padding: 5px;
-        width: 100px;
-        height: 100px;
+        width: auto;
+        height: 150px;
     }
-}
-// this is for the click event, uncomment to see layout on click
-#productInfoShow{
-    background-color: #FFFFFF;
-    border-radius: 5px;
-    display: inline-block;
-    float: right;
-    max-width: 50%;
 }
 
 // API block
 #location{
+    padding: 100px;
     height:100vh;
     background-color: $rain;
 }
 
 // About Us block
 #about{
+    padding: 100px;
     height: 100vh;
     background-color: $greenery;
     color: $black;
