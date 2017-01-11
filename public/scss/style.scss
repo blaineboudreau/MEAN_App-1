@@ -35,14 +35,14 @@ li{
 
 // Home block
 #home{
-    min-height: 100vh;
-    background-color: $rain;
-    padding: 100px;
+
+    padding-top: 100px;
     text-align: center;
 }
 #carousel{
     margin: 0 auto;
     width: 100%;
+
 }
 // Products block
 #products{
@@ -88,7 +88,7 @@ li{
     );
     padding: 10px;
     border-radius: 10px;
-    
+
     img{
         padding: 5px;
         width: auto;
@@ -96,17 +96,17 @@ li{
     }
 }
 
-// API block
+//-------------API block------------
 #location{
-    padding: 100px;
-    height:100vh;
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-color: $rain;
+    margin: 0 auto;
 }
 
-// About Us block
+//----------About Us block------------
 #about{
-    padding: 100px;
-    height: 100vh;
+    padding: 100px 20px;
     background-color: $greenery;
     color: $black;
     h1{
