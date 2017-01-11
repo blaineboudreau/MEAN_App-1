@@ -74,6 +74,11 @@ app.controller('mainController', ['$http', function($http){
 
     };
 
+    //click event to to subscribe
+    this.includePath = 'partials/footerTemplate.html';
+    this.subscribeToNews = function(){
+      alert('you are now subscribed to eTrendy newsletter');
+    };//end of subscribe function
 
 }]); //--> end of function
 
