@@ -33,7 +33,6 @@ app.controller('mainController', ['$http', function($http){
 //-------------------------------------------------
     //get product info / click event
     this.getProductInfo = function(product) {
-        // console.log(this, " is this");
 
         $http({
             method: 'GET',
@@ -47,7 +46,6 @@ app.controller('mainController', ['$http', function($http){
                 console.log(product.name);//returning the name of that specific product which is what I want
                 console.log(product.price);
                 console.log(product.description);
-                console.log(product.image);
          },
          function(response) {
                 console.log(response);
@@ -77,23 +75,3 @@ app.controller('mainController', ['$http', function($http){
 
 
 }]); //--> end of function
-
-// app.controller('mapController', [function($scope){
-// function myMap() {
-//   var mapCanvas = document.getElementById("map");
-//   var myCenter = new google.maps.LatLng(40.7128,-74.0059);
-//   var mapOptions = {center: myCenter, zoom: 5};
-//   var map = new google.maps.Map(mapCanvas,mapOptions);
-//   var marker = new google.maps.Marker({
-//     position: myCenter,
-//     icon: "http://buffetsingapore.sg/wp-content/uploads/2015/10/icon-clothing-store.svg"
-//   });
-//   marker.setMap(map);
-//
-//   var infowindow = new google.maps.InfoWindow({
-//     content: "eTrendy"
-//   });
-//   infowindow.open(map,marker);
-// }
-// }]);
-// myMap();
