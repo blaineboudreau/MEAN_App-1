@@ -75,3 +75,12 @@ app.controller('mainController', ['$http', function($http){
 
 
 }]); //--> end of function
+
+
+
+// app.controller('buyCtrl', ['$scope', function($scope) {
+//     $scope.count = 0;
+//     $scope.buyFunc = function() {
+//       $scope.count++;
+//     };
+//  }]);
