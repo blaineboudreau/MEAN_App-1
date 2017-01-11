@@ -124,11 +124,14 @@ li{
 //----------------Footer------------------
 footer{
     background-color: $peach;
-    height: 200px;
     text-align: center;
+    padding-bottom: 200px;
     input{
         text-align: center;
         width: 50%;
         margin-top: 5%;
+    }
+    cite{
+        padding-bottom: 200px;
     }
 }

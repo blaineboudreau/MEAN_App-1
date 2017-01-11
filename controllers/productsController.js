@@ -23,21 +23,15 @@ router.get('/allProducts', function(req, res) {
     // res.send('all products'); //-->working
 });
 
+//
+// //4. GET ROUTE
+// //gets all images links that match the product name sent through the URI
+// router.get('/byName/:name', function(req, res) {
+// 	Product.find({ product: req.params.data }, function(err, productInfo) {
+// 		res.send(productInfo);
+// 	});
+// });
 
-//4. GET ROUTE
-//gets all images links that match the product name sent through the URI
-router.get('/byName/:name', function(req, res) {
-	Product.find({ product: req.params.data }, function(err, productInfo) {
-		res.send(productInfo);
-	});
-});
-
-//5. SHOPPING CART ROUTE
-router.get('/cart', function(req, res) {
-	Product.find({ product: req.params.data }, function(err, buyProduct) {
-		res.send(buyProduct);
-	});
-});
 
 
 

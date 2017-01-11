@@ -2,7 +2,7 @@ console.log("hi");
 
 function myMap() {
   var mapCanvas = document.getElementById("map");
-  var myCenter = new google.maps.LatLng(40.7128,-74.0059);
+  var myCenter = new google.maps.LatLng(40.7434534,-74.0049315);
   var mapOptions = {center: myCenter, zoom: 5};
   var map = new google.maps.Map(mapCanvas,mapOptions);
   var marker = new google.maps.Marker({

@@ -36,6 +36,7 @@
                                 <li><a href="#products">Products</a></li>
                                 <li><a href="#location">Location</a></li>
                                 <li><a href="#about">About</a></li>
+                                <li><a href="#subscribe">Subscribe</a></li>
                             </ul>
                             <!-- SEARCH AREA -->
                             <form class="navbar-form navbar-left pull-right" role="search" action="index.html" method="post">
@@ -43,14 +44,6 @@
                                     <input type="text" class="form-control" placeholder="Search" ng-model="searchBox">
                                 </div>
                             </form>
-                            <form class="navbar-form navbar-left pull-right" action="index.html" method="post">
-
-                            </form>
-
-
-                            <!-- <div>
-                                <p ng-init="count=0">Cart: {{count}}</p>
-                            </div> -->
                         </div>
                     </div>
                 </nav>
@@ -125,9 +118,9 @@
                                                 <p><strong>{{product.price | currency}}</strong></p>
                                             </div>
                                             <div class="model-footer">
+                                                <!-- CART FEATURE -->
                                                 <button ng-click="count = count + 1" ng-init="count=0" class="btn btn-default" type="button" name="button" >BUY</button><br><br>
                                             </div>
-
                                             <div>
                                                 <p ng-init="count=0">Cart: {{count}}</p>
                                             </div>

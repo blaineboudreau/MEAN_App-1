@@ -32,47 +32,46 @@ app.controller('mainController', ['$http', function($http){
 
 //-------------------------------------------------
     //get product info / click event
-    this.getProductInfo = function(product) {
-
-        $http({
-            method: 'GET',
-            url: 'http://localhost:3000/products/byName/' + product
-        }).then(
-            function(response) {
-                console.log(response);
-                controller.productInfo = response.data;
-                // product.nameId = response.data.name;
-                console.log(response.data);//response.data is returning as an empty object
-                console.log(product.name);//returning the name of that specific product which is what I want
-                console.log(product.price);
-                console.log(product.description);
-
-         },
-         function(response) {
-                console.log(response);
-         }
-        );
-    };
+    // this.getProductInfo = function(product) {
+    //
+    //     $http({
+    //         method: 'GET',
+    //         url: 'http://localhost:3000/products/byName/' + product
+    //     }).then(
+    //         function(response) {
+    //             console.log(response);
+    //             controller.productInfo = response.data;
+    //             console.log(response.data);//response.data is returning as an empty object
+    //             console.log(product.name);//returning the name of that specific product which is what I want
+    //             console.log(product.price);
+    //             console.log(product.description);
+    //
+    //      },
+    //      function(response) {
+    //             console.log(response);
+    //      }
+    //     );
+    // };
 
 //-------------------------------------------------
     //click event to add to cart
-    this.addToCart = function(){
-
-        $http({
-            method: 'GET',
-            url: 'http://localhost:3000/products/cart'
-        }).then(
-            function(response) {
-                console.log(response);
-                console.log('buy button was clicked');
-                controller.productInfo = response.data;
-         },
-         function(response) {
-                console.log(response);
-         }
-        );
-
-    };
+    // this.addToCart = function(){
+    //
+    //     $http({
+    //         method: 'GET',
+    //         url: 'http://localhost:3000/products/cart'
+    //     }).then(
+    //         function(response) {
+    //             console.log(response);
+    //             console.log('buy button was clicked');
+    //             controller.productInfo = response.data;
+    //      },
+    //      function(response) {
+    //             console.log(response);
+    //      }
+    //     );
+    //
+    // };
 
     //click event to to subscribe
     this.includePath = 'partials/footerTemplate.html';
@@ -81,12 +80,3 @@ app.controller('mainController', ['$http', function($http){
     };//end of subscribe function
 
 }]); //--> end of function
-
-
-
-// app.controller('buyCtrl', ['$scope', function($scope) {
-//     $scope.count = 0;
-//     $scope.buyFunc = function() {
-//       $scope.count++;
-//     };
-//  }]);

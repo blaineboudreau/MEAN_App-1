@@ -86,9 +86,11 @@ li {
 
 footer {
   background-color: #FFE6E6;
-  height: 200px;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 200px; }
   footer input {
     text-align: center;
     width: 50%;
     margin-top: 5%; }
+  footer cite {
+    padding-bottom: 200px; }

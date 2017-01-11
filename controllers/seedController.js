@@ -5,65 +5,72 @@ var Product = require('../models/products.js');
 
 
 var productInfo = [
+
     {
-        name: "Multipurpose Work Bag",
-        image: "/images/bag1.png",
-        price: 115,
-        description: "Stow your laptop, documents and other essentials in our chic structured work bag by Tito Balsamo. It's finished with metal feet to protect and help keep its shape."
-    },
-    {
-        name: "Leather Tote",
-        image: "/images/bag2.png",
+        name: "Jersey Sport Jacket",
+        image: "/images/jacket.png",
         price: 250,
-        description: "Chic, function and right on color cue—The Jet Set Medium Tote from Gabrielle Vallim featuring plenty of pockets to keep you organized"
+        description: "Made from a special double-faced jersey that retains its shape and luster, this Pham Thi Dieu Linh sport coat is constructed in an updated slim fit for contemporary style."
     },
     {
-        name: "Black Beat",
-        image: "/images/blackBelt.png",
+        name: "Stretch Linen Blazer",
+        image: "/images/jacket2.png",
+        price: 76,
+        description: "Neat and stylish: Nicole Portantiere's stretch blazer is superbly crafted to span the season, and your range of movement."
+    },
+    {
+        name: "Sheath Dress",
+        image: "/images/dress1.png",
+        price: 119,
+        description: "Icon 54's classic sheath dress is a perfect pick for the office."
+    },
+    {
+        name: "Maxi Slip Dress",
+        image: "/images/dress2.png",
+        price: 225,
+        description: "Pajama chic. This is a floor length slip dress with a v neck by To Uyen. Due to the nature of this fabric, natural imperfections may be found on each garment."
+    },
+    {
+        name: "Grecian Pleated Dress",
+        image: "/images/dress3.png",
+        price: 158,
+        description: "Soft pleats gather at the shoulders and drape beautifully over the body of this dress for a modern look with Grecian-inspired style by NOPIXEL."
+    },
+    {
+        name: "Long Sleeve Tee",
+        image: "/images/longSleeves.png",
         price: 25,
-        description: "From dresses to trousers, add a stylish accent to your ensemble with this icon54 brand belt, featuring a chic metallic finish"
+        description: "Stylish to the core. This modern-fit long sleeved t-shirt from Pham Thi Dieu Linh is perfect for casual occasions."
     },
     {
-        name: "Reversible Belt",
-        image: "/images/whiteBelt.png",
+        name: "Black Camisole",
+        image: "/images/tank.png",
         price: 20,
-        description: "Get two stylish casual looks with this leather belt from Fabián Sanabria, reversible to complement many looks"
+        description: "Look your best in this camisole from Folio."
     },
     {
-        name: "Black Baseball Cap",
-        image: "/images/blackHat.png",
+        name: "Fitted Tee",
+        image: "/images/tee1.png",
         price: 25,
-        description: "Stay cool and protected whenever you're outside with this signature baseball cap from FR. It's crafted in a soft, performance nylon fabric for that already broken-in feeling and enhanced comfort"
+        description: "This all-purpose shirt features a particularly feminine, curve-hugging cut by Monica Gomez."
     },
     {
-        name: "Teardrop Earrings",
-        image: "/images/earrings.png",
-        price: 50,
-        description: 'Translucent resin teardrops dangle elegantly on a pair of Pham Thi Dieu Linh earrings artfully crafted in sterling silver with Frenchwire hooks. Approximate diameter: 3/8\". Approximate drop: 1-1/2\"'
+        name: "Che Guevara Graphic Tee",
+        image: "/images/tee2.png",
+        price: 45,
+        description: "This premium t-shirt is as close to perfect as can be. It will quickly become your favorite t-shirt. Soft, comfortable and durable, this is a definite must-own and a eTrendy recommended product by Kirill Tomilov."
     },
     {
-        name: "Flower Drop Earrings",
-        image: "/images/earrings2.png",
-        price: 30,
-        description: 'Take a shine to the dazzling sparkle of these stunning glass stone flower earrings from H Alberto Gongora. Crafted of 14k mixed metal plated. Approximate drop: 1".'
+        name: "Brenton Tee",
+        image: "/images/tee3.png",
+        price: 45,
+        description: "Our genuine Breton shirts can be dressed up or down to suit any occasion with that certain ‘Je Ne Sais Quoi’. Top quality cotton meets understated classic French styling to create a wardrobe staple for every member of the family by Kirill Tomilov."
     },
     {
-        name: "Floppy Sun Hat",
-        image: "/images/ladiesHat.png",
-        price: 35,
-        description: "Creative Stall's chic sun hat goes from classy to casual depending on your outfit"
-    },
-    {
-        name: "Black Silk Tie",
-        image: "/images/tie1.png",
-        price: 35,
-        description: "This tie by Norbert de Graaff is made from a cotton, silk blend and features a new-classic mélange pattern"
-    },
-    {
-        name: "Stripped Tie",
-        image: "/images/tie2.png",
-        price: 35,
-        description: "A cool tone offset by a crisp grid pattern defines the refined, modern style by Norbert de Graaff."
+        name: "Button Down Shirt",
+        image: "/images/whiteT.png",
+        price: 45,
+        description: "In a modern slim cut, this Adam Zubin shirt has all the appointments of your favorite button-down but in a breezy short-sleeve style. A closer fit layers well and keeps you looking sharp in any season."
     },
     {
         name: "Black Tee",
@@ -204,70 +211,64 @@ var productInfo = [
         description: "Contrast trim makes Pham Thi Dieu Linh's chic, open-front blazer stand out with stellar style."
     },
     {
-        name: "Jersey Sport Coat",
-        image: "/images/jacket.png",
+        name: "Multipurpose Work Bag",
+        image: "/images/bag1.png",
+        price: 115,
+        description: "Stow your laptop, documents and other essentials in our chic structured work bag by Tito Balsamo. It's finished with metal feet to protect and help keep its shape."
+    },
+    {
+        name: "Leather Tote",
+        image: "/images/bag2.png",
         price: 250,
-        description: "Made from a special double-faced jersey that retains its shape and luster, this Pham Thi Dieu Linh sport coat is constructed in an updated slim fit for contemporary style."
+        description: "Chic, function and right on color cue—The Jet Set Medium Tote from Gabrielle Vallim featuring plenty of pockets to keep you organized"
     },
     {
-        name: "Stretch Linen Blazer",
-        image: "/images/jacket2.png",
-        price: 76,
-        description: "Neat and stylish: Nicole Portantiere's stretch blazer is superbly crafted to span the season, and your range of movement."
-    },
-    {
-        name: "Sheath Dress",
-        image: "/images/dress1.png",
-        price: 119,
-        description: "Icon 54's classic sheath dress is a perfect pick for the office."
-    },
-    {
-        name: "Maxi Slip Dress",
-        image: "/images/dress2.png",
-        price: 225,
-        description: "Pajama chic. This is a floor length slip dress with a v neck by To Uyen. Due to the nature of this fabric, natural imperfections may be found on each garment."
-    },
-    {
-        name: "Grecian Pleated Dress",
-        image: "/images/dress3.png",
-        price: 158,
-        description: "Soft pleats gather at the shoulders and drape beautifully over the body of this dress for a modern look with Grecian-inspired style by NOPIXEL."
-    },
-    {
-        name: "Long Sleeve Tee",
-        image: "/images/longSleeves.png",
+        name: "Black Beat",
+        image: "/images/blackBelt.png",
         price: 25,
-        description: "Stylish to the core. This modern-fit long sleeved t-shirt from Pham Thi Dieu Linh is perfect for casual occasions."
+        description: "From dresses to trousers, add a stylish accent to your ensemble with this icon54 brand belt, featuring a chic metallic finish"
     },
     {
-        name: "Black Camisole",
-        image: "/images/tank.png",
+        name: "Reversible Belt",
+        image: "/images/whiteBelt.png",
         price: 20,
-        description: "Look your best in this camisole from Folio."
+        description: "Get two stylish casual looks with this leather belt from Fabián Sanabria, reversible to complement many looks"
     },
     {
-        name: "Fitted Tee",
-        image: "/images/tee1.png",
+        name: "Black Baseball Cap",
+        image: "/images/blackHat.png",
         price: 25,
-        description: "This all-purpose shirt features a particularly feminine, curve-hugging cut by Monica Gomez."
+        description: "Stay cool and protected whenever you're outside with this signature baseball cap from FR. It's crafted in a soft, performance nylon fabric for that already broken-in feeling and enhanced comfort"
     },
     {
-        name: "Che Guevara Graphic Tee",
-        image: "/images/tee2.png",
-        price: 45,
-        description: "This premium t-shirt is as close to perfect as can be. It will quickly become your favorite t-shirt. Soft, comfortable and durable, this is a definite must-own and a eTrendy recommended product by Kirill Tomilov."
+        name: "Teardrop Earrings",
+        image: "/images/earrings.png",
+        price: 50,
+        description: 'Translucent resin teardrops dangle elegantly on a pair of Pham Thi Dieu Linh earrings artfully crafted in sterling silver with Frenchwire hooks. Approximate diameter: 3/8\". Approximate drop: 1-1/2\"'
     },
     {
-        name: "Brenton Tee",
-        image: "/images/tee3.png",
-        price: 45,
-        description: "Our genuine Breton shirts can be dressed up or down to suit any occasion with that certain ‘Je Ne Sais Quoi’. Top quality cotton meets understated classic French styling to create a wardrobe staple for every member of the family by Kirill Tomilov."
+        name: "Flower Drop Earrings",
+        image: "/images/earrings2.png",
+        price: 30,
+        description: 'Take a shine to the dazzling sparkle of these stunning glass stone flower earrings from H Alberto Gongora. Crafted of 14k mixed metal plated. Approximate drop: 1".'
     },
     {
-        name: "Button Down Shirt",
-        image: "/images/whiteT.png",
-        price: 45,
-        description: "In a modern slim cut, this Adam Zubin shirt has all the appointments of your favorite button-down but in a breezy short-sleeve style. A closer fit layers well and keeps you looking sharp in any season."
+        name: "Floppy Sun Hat",
+        image: "/images/ladiesHat.png",
+        price: 35,
+        description: "Creative Stall's chic sun hat goes from classy to casual depending on your outfit"
+    },
+    {
+        name: "Black Silk Tie",
+        image: "/images/tie1.png",
+        price: 35,
+        description: "This tie by Norbert de Graaff is made from a cotton, silk blend and features a new-classic mélange pattern"
+    },
+    {
+        name: "Stripped Tie",
+        image: "/images/tie2.png",
+        price: 35,
+        description: "A cool tone offset by a crisp grid pattern defines the refined, modern style by Norbert de Graaff."
     }
 ];
 
