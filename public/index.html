@@ -60,10 +60,10 @@
                             </div>
                         </form>
 
-
-                        <div>
+                        <!-- <div>
                             <p ng-init="count=0">Cart: {{count}}</p>
-                        </div>
+                        </div> -->
+
 
                     </div>
                 </nav>
@@ -76,32 +76,32 @@
                             <li data-target="#theCarousel" data-slide-to="0" class="active"></li>
                             <li data-target="#theCarousel" data-slide-to="1"></li>
                             <li data-target="#theCarousel" data-slide-to="2"></li>
-                            <li data-target="#theCarousel" data-slide-to="3"></li>
-                            <li data-target="#theCarousel" data-slide-to="4"></li>
-                            <li data-target="#theCarousel" data-slide-to="5"></li>
+                            <!-- <li data-target="#theCarousel" data-slide-to="3"></li> -->
+                            <!-- <li data-target="#theCarousel" data-slide-to="4"></li>
+                            <li data-target="#theCarousel" data-slide-to="5"></li> -->
                         </ol>
                         <div class="carousel-inner">
-                            <div class="item active">
+                            <!-- <div class="item ">
                                 <img src="images/bag2.png" alt="Tote Bag" class="img-responsive" >
+                            </div> -->
+                            <div class="item active">
+                                <img src="images/gallery-1.jpeg" alt="Dress" class="img-responsive" >
                             </div>
                             <div class="item">
-                                <img src="images/dress1.png" alt="Dress" class="img-responsive" >
+                                <img src="images/gallery-2.jpeg" alt="Earrings" class="img-responsive" >
                             </div>
                             <div class="item">
-                                <img src="images/earrings2.png" alt="Earrings" class="img-responsive" >
+                                <img src="images/gallery-3.jpeg" alt="Platform Pumps" class="img-responsive" >
                             </div>
-                            <div class="item">
-                                <img src="images/platform.png" alt="Platform Pumps" class="img-responsive" >
-                            </div>
-                            <div class="item">
-                                <img src="images/tee2.png" alt="Tee Shirt" class="img-responsive" >
-                            </div>
-                            <div class="item">
+                            <!-- <div class="item">
+                                <img src="images/gallery-3.jpeg" alt="Tee Shirt" class="img-responsive" >
+                            </div> -->
+                            <!-- <div class="item">
                                 <img src="images/hoodie.png" alt="Hoodie Sweatshirt" class="img-responsive" >
                             </div>
                             <div class="item">
                                 <img src="images/sneaker.png" alt="Sneakers" class="img-responsive" >
-                            </div>
+                            </div> -->
                             <a href="#theCarousel" class="carousel-control" data-slide="prev">
                                 <span class="icon-preview"></span>
                             </a>
@@ -144,8 +144,12 @@
                                                     <p><strong>{{product.price | currency}}</strong></p>
                                                 </div>
                                                 <div class="model-footer">
-                                                    <button ng-keyup="event=$event" class="btn btn-default" type="button" name="button" data-dismiss="modal">BUY {{ event.keyCode }}</button><br><br>
+                                                    <button ng-click="count = count + 1" ng-init="count=0" class="btn btn-default" type="button" name="button" data-dismiss="modal">BUY</button><br><br>
                                                 </div>
+
+                                                <!-- <div>
+                                                    <p ng-init="count=0">Cart: {{count}}</p>
+                                                </div> -->
                                             </div>
                                         </div>
                                     </div>
