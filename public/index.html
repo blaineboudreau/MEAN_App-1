@@ -37,12 +37,16 @@
                                 <li><a href="#location">Location</a></li>
                                 <li><a href="#about">About</a></li>
                             </ul>
-                            <!-- Search Area -->
+                            <!-- SEARCH AREA -->
                             <form class="navbar-form navbar-left pull-right" role="search" action="index.html" method="post">
                                 <div class="form-group">
                                     <input type="text" class="form-control" placeholder="Search" ng-model="searchBox">
                                 </div>
                             </form>
+                            <form class="navbar-form navbar-left pull-right" action="index.html" method="post">
+
+                            </form>
+
 
                             <!-- <div>
                                 <p ng-init="count=0">Cart: {{count}}</p>
@@ -52,6 +56,13 @@
                 </nav>
             </div>
             <!-- NAVBAR ENDS -->
+            <!-- LOGO -->
+            <div class="container">
+                <div id="logo">
+                    <img src="images/logo-1.png" alt="eTrendy Logo">
+                </div>
+            </div>
+            <!-- LOGO ENDS -->
             <!-- CAROUSEL STARTS -->
             <div class="container">
                 <div id="theCarousel" class="carousel slide">
@@ -114,12 +125,12 @@
                                                 <p><strong>{{product.price | currency}}</strong></p>
                                             </div>
                                             <div class="model-footer">
-                                                <button ng-click="count = count + 1" ng-init="count=0" class="btn btn-default" type="button" name="button" data-dismiss="modal">BUY</button><br><br>
+                                                <button ng-click="count = count + 1" ng-init="count=0" class="btn btn-default" type="button" name="button" >BUY</button><br><br>
                                             </div>
 
-                                            <!-- <div>
+                                            <div>
                                                 <p ng-init="count=0">Cart: {{count}}</p>
-                                            </div> -->
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

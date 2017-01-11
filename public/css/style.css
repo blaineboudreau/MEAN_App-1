@@ -18,6 +18,12 @@ li {
 #home {
   padding-top: 100px;
   text-align: center; }
+  #home #logo {
+    width: 10%;
+    max-height: 10%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
 
 #carousel {
   margin: 0 auto;
