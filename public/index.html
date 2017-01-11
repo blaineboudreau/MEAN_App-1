@@ -125,13 +125,14 @@
                                         <img ng-src='{{product.image}}'/>
                                         <p>{{product.name}}</p>
                                         <p>{{product.price | currency}}</p>
-                                        <button ng-click="ctrl.getProductInfo(product);"
+                                        <button
+                                                ng-click="ctrl.getProductInfo(product);"
                                                 class="btn btn-default"
-                                                data-target="#productModal"
+                                                data-target="#productModal{{$index}}"
                                                 data-toggle="modal">Preview</button>
                                                 <!-- product modal -->
                                     </div>
-                                    <div id="productModal" class="modal fade" role="dialog" tabindex="-1" modal="showModal">
+                                    <div id="productModal{{$index}}" class="modal fade" role="dialog" tabindex="-1" modal="showModal">
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">
