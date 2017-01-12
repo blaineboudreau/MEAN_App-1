@@ -15,7 +15,7 @@ var app = express();
 
 // 5. DATABASE
 // mongoose.connect('mongodb://localhost/mean_app');
-var mongoUri = process.env.MONGODB_URI || 'mongodb://localhost:27017/etrendy-app';//tried it with & w/o 27017
+var mongoUri = process.env.MONGODB_URI || 'mongodb://localhost/mean_app';//tried it with & w/o 27017
 
 mongoose.connect(mongoUri);
 
