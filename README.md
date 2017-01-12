@@ -1,17 +1,23 @@
 #eTrendy
+
+![screen shot 2017-01-12 at 1 56 16 pm](https://cloud.githubusercontent.com/assets/22794560/21908448/fe86f728-d8d0-11e6-8ec6-cd3c1af42315.png)
 <hr>
+
 Welcome to eTrendy's app for Fashion at your finger tips.
 This is collaborative group MEAN-Stack App project for Unit 3 at General Assembly
-This is a simulated store app built with responsive technology.
+This is a simulated store app built.
 
-To view this app go to: [eTrendy](https://etrendy-app.herokuapp.com/)
+To view this app go to: [eTrendy@heroku.com](https://etrendy-app.herokuapp.com/)
+
 
 ######User Stories:
+<hr>
 - When a user visits our pages they will see the store logo with photos about our products.
 - The user has to scroll down to see the marketplace and our products or click on the products section in the navbar
 - The user needs to click on the preview button to get the information about the product.
 - If the user wants to buy a product, they will see a ‘buy’ button in the window where all the information about the product is
 - To see where our store is located, the user has to scroll down to see the location in google maps.
+
 
 ######Requirements
 <hr>
@@ -32,6 +38,7 @@ To download this app go to:
 
 
 ######Technology/Languages Used for this project:
+<hr>
 -Heroku
 -Node.js
 -HTML
@@ -39,6 +46,7 @@ To download this app go to:
 -JavaScript
 
 ######Libraries/Modules used:
+<hr>
 -AngularJS
 -Mongoose
 -MongoDB
@@ -51,12 +59,14 @@ To download this app go to:
 -Bootstrap
 
 ######Owners/Creators:
+<hr>
 -Architect: Stephanie Blondet
 -API: Blaine Boudreau
 -Design/Styling: Jessica Beardsley
 
 
 <hr>
+
 _This app and all code within it are owned by the authors on the account alone and not available for use to the public. Jan, 2017'_
 
 Resources
