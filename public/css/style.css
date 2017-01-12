@@ -39,9 +39,6 @@ li {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-flex-grow: 4;
-    -ms-flex-positive: 4;
-    flex-grow: 4;
     text-align: center;
     padding: 5px; }
   #products li {
@@ -53,11 +50,14 @@ li {
   #products .modal {
     width: 60%;
     margin: 0 auto;
-    padding: 5px; }
+    padding: 5px;
+    padding-bottom: 5px; }
     #products .modal img {
-      width: 100px;
+      width: 200px;
       height: auto;
-      display: -webkit-inline-box; }
+      display: -webkit-inline-box;
+      margin: 0 auto;
+      padding: 5px; }
     #products .modal p {
       width: 50%;
       margin: 0 auto; }

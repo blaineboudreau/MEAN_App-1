@@ -5,7 +5,6 @@ var app = angular.module('MeanApp', []);
 
 
 
-
 //2.
 app.controller('mainController', ['$http', function($http){
 
@@ -17,10 +16,10 @@ app.controller('mainController', ['$http', function($http){
     //retrieve the list of all products when the page loads (images links)
     $http({
         method: 'GET',
-        url: 'http://localhost:3000/products/allProducts'
+        url: 'http://localhost:3000/products/'
     }).then(
         function(response) { //success
-            console.log(response); //gets the array of objects
+            console.log("this is the response"); //gets the array of objects
             controller.allProducts = response.data;
             console.log(response.data); //returns as object
         },
