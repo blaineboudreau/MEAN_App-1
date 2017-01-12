@@ -86,7 +86,7 @@ To download this app go to:[eTrendy@github](https://github.com/jeska706/MEAN_App
 _This app and all code within it are owned by the authors on the account alone and not available for use to the public. Jan, 2017'_
 
 Resources:
-- All icons are from [The Noun Project](https://thenounproject.com/) the artist for each icon is referenced in each product description.<br>
+- All icons are from [The Noun Project](https://thenounproject.com/) the artists for each icon is referenced in each product description.<br>
 - Images for the carousel are from:<br>
   1. [Woman with Hat](https://www.pexels.com/photo/adult-attractive-beautiful-beauty-262226/)<br>
   2. [Woman with Stripes](https://www.pexels.com/photo/grayscale-photo-of-woman-in-turtle-neck-shirt-standing-in-front-of-window-blinds-47401/)<br>
