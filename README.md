@@ -3,7 +3,8 @@
 ![screen shot 2017-01-12 at 1 56 16 pm](https://cloud.githubusercontent.com/assets/22794560/21908448/fe86f728-d8d0-11e6-8ec6-cd3c1af42315.png)
 <hr>
 
-Welcome to eTrendy's app for fashion at your finger tips.<br>
+##Welcome to eTrendy's app for fashion at your finger tips.<br>
+
 This is a collaborative group MEAN-Stack App project for Unit 3 at General Assembly featuring a simulated store.
 
 
@@ -12,7 +13,7 @@ To view this app go to: [eTrendy@heroku.com](https://etrendy-app.herokuapp.com/)
 
 
 
-######User Stories:
+##User Stories:
 <hr>
 - When a user visits our pages they will see the store logo with photos about our products.<br>
 - The user has to scroll down to see the marketplace and our products or click on the products section in the navbar.<br>
@@ -23,7 +24,7 @@ To view this app go to: [eTrendy@heroku.com](https://etrendy-app.herokuapp.com/)
 
 
 
-######Requirements
+##Requirements:
 
 eTrendy requires the following to run:<br>
 -[Node.js](https://nodejs.org/en/)<br>
@@ -33,7 +34,7 @@ eTrendy requires the following to run:<br>
 
 
 
-######Usage
+##Usage:
 
 To download this app go to:<br>
 [MEAN_App/eTrendy](https://github.com/jeska706/MEAN_App)<br>
