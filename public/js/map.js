@@ -7,7 +7,7 @@ function myMap() {
   var map = new google.maps.Map(mapCanvas,mapOptions);
   var marker = new google.maps.Marker({
     position: myCenter,
-    icon: "https://buffetsingapore.sg/wp-content/uploads/2015/10/icon-clothing-store.svg"
+    icon: "/images/blackT.png"
   });
   marker.setMap(map);
 
