@@ -1,6 +1,7 @@
 console.log("hi");
 
-function myMap() {
+
+function initMap() {
   var mapCanvas = document.getElementById("map");
   var myCenter = new google.maps.LatLng(40.7434534,-74.0049315);
   var mapOptions = {center: myCenter, zoom: 5};
