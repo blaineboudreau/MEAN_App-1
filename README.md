@@ -5,7 +5,7 @@
 
 ##Welcome to eTrendy's app for fashion at your finger tips.<br>
 
-This is a collaborative group MEAN-Stack App project for Unit 3 at General Assembly featuring a simulated store.
+This is a collaborative group project for Unit 3 at General Assembly featuring a MEAN-Stack simulated ecommerce store.
 
 
 - To view this app go to: [eTrendy@heroku.com](https://etrendy-app.herokuapp.com/)
