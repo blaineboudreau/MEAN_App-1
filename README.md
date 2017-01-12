@@ -1,4 +1,4 @@
-<b>#eTrendy</b>
+#eTrendy
 
 ![screen shot 2017-01-12 at 1 56 16 pm](https://cloud.githubusercontent.com/assets/22794560/21908448/fe86f728-d8d0-11e6-8ec6-cd3c1af42315.png)
 <hr>
@@ -85,10 +85,10 @@ To download this app go to:[eTrendy@github](https://github.com/jeska706/MEAN_App
 
 _This app and all code within it are owned by the authors on the account alone and not available for use to the public. Jan, 2017'_
 
-Resources
+Resources:
 - All icons are from [The Noun Project](https://thenounproject.com/) the artist for each icon is referenced in each product description.<br>
 - Images for the carousel are from:<br>
-1. [Woman with Hat](https://www.pexels.com/photo/adult-attractive-beautiful-beauty-262226/)<br>
-2. [Woman with Stripes](https://www.pexels.com/photo/grayscale-photo-of-woman-in-turtle-neck-shirt-standing-in-front-of-window-blinds-47401/)<br>
-3. [Man with Beanie](https://www.pexels.com/photo/man-in-beanie-holding-his-shoulder-193355/)<br>
+  1. [Woman with Hat](https://www.pexels.com/photo/adult-attractive-beautiful-beauty-262226/)<br>
+  2. [Woman with Stripes](https://www.pexels.com/photo/grayscale-photo-of-woman-in-turtle-neck-shirt-standing-in-front-of-window-blinds-47401/)<br>
+  3. [Man with Beanie](https://www.pexels.com/photo/man-in-beanie-holding-his-shoulder-193355/)<br>
 - Setting up API [Adding a Google Map](https://developers.google.com/maps/documentation/javascript/adding-a-google-map)<br>
