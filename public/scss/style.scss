@@ -35,7 +35,7 @@ li{
 
 // Home block
 #home{
-
+    // padding-bottom: 50px;
     padding-top: 100px;
     text-align: center;
     #logo{
@@ -58,7 +58,6 @@ li{
     ul{
         display: flex;
         flex-wrap: wrap;
-        flex-grow: 4;
         text-align: center;
         padding: 5px;
     }
@@ -75,10 +74,13 @@ li{
         width: 60%;
         margin: 0 auto;
         padding: 5px;
+        padding-bottom: 5px;
         img{
-            width: 100px;
+            width: 200px;
             height: auto;
             display: -webkit-inline-box;
+            margin: 0 auto;
+            padding: 5px;
         }
         p{
             width: 50%;
