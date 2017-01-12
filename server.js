@@ -3,7 +3,7 @@
 var express = require('express');
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
-
+var port = process.env.PORT || 3000;
 
 // 2. CONFIGURATION
 var app = express();
@@ -14,7 +14,10 @@ var app = express();
 
 
 // 5. DATABASE
-mongoose.connect('mongodb://localhost/mean_app');
+// mongoose.connect('mongodb://localhost/mean_app');
+var mongoUri = process.env.MONGODB_URI || 'mongodb://localhost:27017/grocery_app_dev';
+
+mongoose.connect(mongoUri);
 
 mongoose.connection.once('open', function(){
     console.log('connected to mongod');
@@ -35,6 +38,6 @@ app.use(bodyParser.json());
 
 
 //3. LISTENER
-app.listen(3000, function() {
+app.listen(port, function() {
     console.log('mean app is listening');
 });
