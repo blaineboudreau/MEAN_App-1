@@ -3,9 +3,9 @@
 ![screen shot 2017-01-12 at 1 56 16 pm](https://cloud.githubusercontent.com/assets/22794560/21908448/fe86f728-d8d0-11e6-8ec6-cd3c1af42315.png)
 <hr>
 
-Welcome to eTrendy's app for Fashion at your finger tips.
-This is collaborative group MEAN-Stack App project for Unit 3 at General Assembly
-This is a simulated store app built.
+Welcome to eTrendy's app for Fashion at your finger tips.<br>
+This is simulated store, collaborative group MEAN-Stack App project for Unit 3 at General Assembly
+
 
 To view this app go to: [eTrendy@heroku.com](https://etrendy-app.herokuapp.com/)
 
@@ -19,12 +19,17 @@ To view this app go to: [eTrendy@heroku.com](https://etrendy-app.herokuapp.com/)
 - To see where our store is located, the user has to scroll down to see the location in google maps.
 
 
+
+
 ######Requirements
 <hr>
-eTrendy requires the following to run:
--[Node.js](https://nodejs.org/en/)
--npm (normally comes with Node.js)
+eTrendy requires the following to run:<br>
+-[Node.js](https://nodejs.org/en/)<br>
+-npm (normally comes with Node.js)<br>
 -[MongoDB](https://www.mongodb.com)
+
+
+
 
 ######Usage
 <hr>
