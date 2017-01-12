@@ -36,8 +36,7 @@ eTrendy requires the following to run:<br>
 
 ##Usage:
 
-To download this app go to:<br>
-[eTrendy@github](https://github.com/jeska706/MEAN_App)<br>
+To download this app go to:[eTrendy@github](https://github.com/jeska706/MEAN_App)<br>
 
 -Run 'npm init' in your terminal<br>
 -In a second terminal run 'mongod'<br>
