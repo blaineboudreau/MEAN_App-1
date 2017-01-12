@@ -7,7 +7,7 @@ function myMap() {
   var map = new google.maps.Map(mapCanvas,mapOptions);
   var marker = new google.maps.Marker({
     position: myCenter,
-    icon: "/images/blackT.png"
+    icon: "/images/blackT-50.png"
   });
   marker.setMap(map);
 
