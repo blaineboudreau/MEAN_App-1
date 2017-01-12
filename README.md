@@ -83,7 +83,7 @@ To download this app go to:[eTrendy@github](https://github.com/jeska706/MEAN_App
 - API: Blaine Boudreau<br>
 - Design/Styling: Jessica Beardsley<br>
 
-_This app and all code within it are owned by the authors on the account alone and not available for use to the public. Jan, 2017'_
+_This app and all code within it are owned by the authors on the account alone and not available for use to the public. Jan 2017'_
 
 Resources:
 - All icons are from [The Noun Project](https://thenounproject.com/) the artists for each icon is referenced in each product description.<br>
