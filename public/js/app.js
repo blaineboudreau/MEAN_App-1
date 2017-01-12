@@ -16,7 +16,7 @@ app.controller('mainController', ['$http', function($http){
     //retrieve the list of all products when the page loads (images links)
     $http({
         method: 'GET',
-        url: 'https://localhost:3000/products/'
+        url: '/products'
     }).then(
         function(response) { //success
             console.log("this is the response"); //gets the array of objects
