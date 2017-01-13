@@ -1,6 +1,11 @@
-body h1 {
-  color: #6FB98F;
-  font-family: 'Roboto', sans-serif; }
+body {
+  letter-spacing: 2px; }
+  body h1 {
+    color: #6FB98F;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    padding-bottom: 50px;
+    letter-spacing: 2px; }
 
 li {
   list-style: none; }
@@ -85,6 +90,8 @@ li {
   padding-bottom: 100px;
   background-color: #2C7873;
   margin: 0 auto; }
+  #location h1 {
+    color: #004445; }
 
 #about {
   padding: 100px 20px;
@@ -92,8 +99,12 @@ li {
   color: #000000;
   letter-spacing: 2px; }
   #about h1 {
-    color: inherit;
+    color: #FFFFFF;
     margin-bottom: 50px; }
+  #about h3 {
+    font-family: 'Merriweather Sans', sans-serif; }
+  #about h4 {
+    font-weight: 300; }
   #about #steph {
     margin: 50px 0; }
     #about #steph #stephImg {
@@ -215,6 +226,11 @@ footer {
       width: 200px;
       min-height: 20%;
       margin: 5px; }
+    #products .modal {
+      min-width: 100%;
+      margin: 0; }
+      #products .modal p {
+        width: 80%; }
   #about #steph h4 {
     width: 80%; }
   #about #blaine h4 {

@@ -9,9 +9,13 @@ $black: #000000;
 
 // Base
 body{
+    letter-spacing: 2px;
     h1{
         color: $greenery;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        padding-bottom: 50px;
+        letter-spacing: 2px;
     }
 }
 li{
@@ -123,6 +127,10 @@ li{
     padding-bottom: 100px;
     background-color: $rain;
     margin: 0 auto;
+    h1{
+        color: $cadetBlue;
+    }
+
 }
 
 //----------About Us block------------
@@ -132,10 +140,15 @@ li{
     color: $black;
     letter-spacing: 2px;
     h1{
-        color: inherit;
+        color: #FFFFFF;
         margin-bottom: 50px;
     }
-
+    h3{
+        font-family: 'Merriweather Sans', sans-serif;
+    }
+    h4{
+        font-weight: 300;
+    }
     #steph{
         #stephImg{
             display: inline-block;
@@ -215,6 +228,7 @@ footer{
     h1{
         text-align: center;
     }
+
     #about{
         #steph{
             #stephImg{
@@ -286,6 +300,7 @@ footer{
             margin-left: 0;
         }
     }
+
     #products{
         padding-top: 50px;
         display: flex;
@@ -300,6 +315,13 @@ footer{
             min-height: 20%;
             margin: 5px;
 
+        }
+        .modal{
+            min-width: 100%;
+            margin: 0;
+            p{
+                width: 80%;
+            }
         }
     }
     #about{
