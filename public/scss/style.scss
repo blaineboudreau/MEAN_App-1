@@ -11,6 +11,7 @@ $black: #000000;
 body{
     h1{
         color: $greenery;
+        font-family: 'Roboto', sans-serif;
     }
 }
 li{
@@ -21,6 +22,7 @@ li{
     background-color: $blueBlack;
     color: $rain;
     padding: 5px;
+    font-family: 'Roboto', sans-serif;
     a{
         color: $rain;
     }
@@ -35,22 +37,21 @@ li{
 
 // Home block
 #home{
-    // padding-bottom: 50px;
     padding-top: 100px;
     text-align: center;
     #logo{
-        img{}
         width: 10%;
         max-height: 10%;
         display: flex;
     }
+    #carousel{
+        margin: 0 auto;
+        width: 100%;
+    }
 }
 
-#carousel{
-    margin: 0 auto;
-    width: 100%;
-    
-}
+
+
 // Products block
 #products{
     padding-top: 100px;
@@ -64,6 +65,14 @@ li{
     li{
         margin: 1%;
         width: 30%;
+        #preview{
+            color: white;
+            letter-spacing: 2px;
+            text-decoration: none;
+        }
+        #preview:hover{
+            color: $greenery;
+        }
     }
     img{
         max-width: 80%;
@@ -118,13 +127,67 @@ li{
     padding: 100px 20px;
     background-color: $greenery;
     color: $black;
+    letter-spacing: 2px;
     h1{
         color: inherit;
+        margin-bottom: 50px;
+    }
+
+    #steph{
+        #stephImg{
+            display: inline-block;
+            float: left;
+            height: 200px;
+            margin-right: 30px;
+        }
+        h4{
+            padding: 10px;
+            width: 80%;
+            color: $cadetBlue;
+        }
+        margin: 50px 0;
+    }
+    #blaine{
+        #blaineImg{
+            display: inline-block;
+            float: right;
+            height: 220px;
+            margin-right: 20px;
+        }
+        h2{
+            margin-left: 64%;
+        }
+        h3{
+            margin-left: 61%;
+        }
+        h4{
+            padding: 0 -15px 0 100px;
+            width: 60%;
+            margin-left: 176px;
+            color: $cadetBlue;
+        }
+        margin: 50px 0;
+    }
+
+    #jes{
+        #jesImg{
+            display: inline-block;
+            float: left;
+            height: 200px;
+            margin-right: 30px;
+        }
+        h4{
+            padding: 10px;
+            width: 80%;
+            color: $cadetBlue;
+        }
+        margin: 50px 0;
     }
 }
 
 //----------------Footer------------------
 footer{
+    padding-top: 50px;
     background-color: $peach;
     text-align: center;
     padding-bottom: 200px;
@@ -135,5 +198,50 @@ footer{
     }
     cite{
         padding-bottom: 200px;
+    }
+    #subscribe{
+        padding: 10px;
+    }
+    #footer{
+        margin-top: 200px;
+    }
+}
+
+//-----------------Mobile---------------------
+@media(max-width:700px){
+    #home{
+        padding-top: 150px;
+        height: 100vh;
+        #product{
+            .modal{
+                width: 100%;
+            }
+        }
+
+    }
+    #products{
+        padding-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        ul{
+            display: block;
+
+        }
+        #productItem{
+            height: 250px;
+            width: 200px;
+            min-height: 20%;
+            margin: 5px;
+
+        }
+    }
+    footer{
+        padding-top: 100px;
+        height: 100vh;
+
+        cite{
+            margin-top: 100px;
+            padding: 10px;
+        }
     }
 }
