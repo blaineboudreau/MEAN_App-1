@@ -31,11 +31,13 @@ li {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
-  #home #carousel {
-    margin: 0 auto;
-    width: 100%; }
+  #home #theCarousel {
+    margin: auto;
+    width: 90%;
+    padding-right: 0;
+    padding-left: 0; }
   #home #navSearch {
-    margin-left: 310px; }
+    float: right; }
 
 #products {
   padding-top: 100px;
@@ -210,7 +212,8 @@ footer {
     #home #product .modal {
       width: 100%; }
     #home #navSearch {
-      margin-left: 0; }
+      margin-left: 0;
+      float: none; }
   #products {
     padding-top: 50px;
     display: -webkit-flex;

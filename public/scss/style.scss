@@ -40,6 +40,7 @@ li{
 //-------------------Sections------------------
 
 // Home block
+
 #home{
     padding-top: 100px;
     text-align: center;
@@ -47,13 +48,17 @@ li{
         width: 10%;
         max-height: 10%;
         display: flex;
+
     }
-    #carousel{
-        margin: 0 auto;
-        width: 100%;
+    #theCarousel{
+        margin: auto;
+        width: 90%;
+        padding-right: 0;
+        padding-left: 0;
     }
     #navSearch{
-        margin-left: 310px;
+        // margin-left: 280px;
+        float:right;
     }
 }
 
@@ -228,7 +233,6 @@ footer{
     h1{
         text-align: center;
     }
-
     #about{
         #steph{
             #stephImg{
@@ -298,6 +302,7 @@ footer{
         }
         #navSearch{
             margin-left: 0;
+            float: none;
         }
     }
 
