@@ -29,6 +29,8 @@ li {
   #home #carousel {
     margin: 0 auto;
     width: 100%; }
+  #home #navSearch {
+    margin-left: 310px; }
 
 #products {
   padding-top: 100px;
@@ -147,12 +149,57 @@ footer {
   footer #footer {
     margin-top: 200px; }
 
+@media (max-width: 800px) {
+  h1 {
+    text-align: center; }
+  #about #steph #stephImg {
+    margin: 0 auto;
+    display: block;
+    clear: both;
+    float: none;
+    padding-bottom: 20px; }
+  #about #steph h2, #about #steph h3, #about #steph h4 {
+    margin: auto;
+    text-align: center; }
+  #about #steph h4 {
+    padding-top: 20px;
+    width: 50%;
+    clear: left; }
+  #about #blaine #blaineImg {
+    margin: 0 auto;
+    display: block;
+    clear: both;
+    float: none;
+    padding-bottom: 20px; }
+  #about #blaine h2, #about #blaine h3, #about #blaine h4 {
+    margin: auto;
+    text-align: center; }
+  #about #blaine h4 {
+    padding-top: 20px;
+    width: 50%;
+    clear: left; }
+  #about #jes #jesImg {
+    margin: 0 auto;
+    display: block;
+    clear: both;
+    float: none;
+    padding-bottom: 20px; }
+  #about #jes h2, #about #jes h3, #about #jes h4 {
+    margin: auto;
+    text-align: center; }
+  #about #jes h4 {
+    padding-top: 20px;
+    width: 50%;
+    clear: left; } }
+
 @media (max-width: 700px) {
   #home {
     padding-top: 150px;
     height: 100vh; }
     #home #product .modal {
       width: 100%; }
+    #home #navSearch {
+      margin-left: 0; }
   #products {
     padding-top: 50px;
     display: -webkit-flex;
@@ -168,6 +215,12 @@ footer {
       width: 200px;
       min-height: 20%;
       margin: 5px; }
+  #about #steph h4 {
+    width: 80%; }
+  #about #blaine h4 {
+    width: 80%; }
+  #about #jes h4 {
+    width: 80%; }
   footer {
     padding-top: 100px;
     height: 100vh; }

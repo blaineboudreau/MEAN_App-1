@@ -48,6 +48,9 @@ li{
         margin: 0 auto;
         width: 100%;
     }
+    #navSearch{
+        margin-left: 310px;
+    }
 }
 
 
@@ -208,7 +211,69 @@ footer{
 }
 
 //-----------------Mobile---------------------
+@media(max-width:800px){
+    h1{
+        text-align: center;
+    }
+    #about{
+        #steph{
+            #stephImg{
+                margin: 0 auto;
+                display: block;
+                clear: both;
+                float: none;
+                padding-bottom: 20px;
+            }
+            h2, h3, h4{
+                margin: auto;
+                text-align: center;
+            }
+            h4{
+                padding-top: 20px;
+                width: 50%;
+                clear: left;
+            }
+        }
+        #blaine{
+            #blaineImg{
+                margin: 0 auto;
+                display: block;
+                clear: both;
+                float: none;
+                padding-bottom: 20px;
+            }
+            h2, h3, h4{
+                margin: auto;
+                text-align: center;
+            }
+            h4{
+                padding-top: 20px;
+                width: 50%;
+                clear: left;
+            }
+        }
+        #jes{
+            #jesImg{
+                margin: 0 auto;
+                display: block;
+                clear: both;
+                float: none;
+                padding-bottom: 20px;
+            }
+            h2, h3, h4{
+                margin: auto;
+                text-align: center;
+            }
+            h4{
+                padding-top: 20px;
+                width: 50%;
+                clear: left;
+            }
+        }
+    }
+}
 @media(max-width:700px){
+
     #home{
         padding-top: 150px;
         height: 100vh;
@@ -217,7 +282,9 @@ footer{
                 width: 100%;
             }
         }
-
+        #navSearch{
+            margin-left: 0;
+        }
     }
     #products{
         padding-top: 50px;
@@ -233,6 +300,23 @@ footer{
             min-height: 20%;
             margin: 5px;
 
+        }
+    }
+    #about{
+        #steph{
+            h4{
+                width: 80%;
+            }
+        }
+        #blaine{
+            h4{
+                width: 80%;
+            }
+        }
+        #jes{
+            h4{
+                width: 80%;
+            }
         }
     }
     footer{
